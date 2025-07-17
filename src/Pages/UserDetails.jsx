@@ -16,7 +16,7 @@ const UserDetails = () => {
     const Nav = useNavigate()
 
     const handleGetOneUserData = () => {
-        const url = `https://sa-p-new-broker-back-end.vercel.app/api/userdata/${id}`;
+        const url = `https://sa-p-new-broker-back-end-ashy.vercel.app/api/userdata/${id}`;
         axios
             .get(url)
             .then((res) => {
@@ -88,7 +88,7 @@ const UserDetails = () => {
             const toastLoadingId = toast.loading("Please wait...");
             const data = reqData;
             console.log(data);
-            const url = `https://sa-p-new-broker-back-end.vercel.app/api/userdata/${id}`;
+            const url = `https://sa-p-new-broker-back-end-ashy.vercel.app/api/userdata/${id}`;
             console.log(url);
             axios
                 .patch(url, data)
@@ -184,7 +184,7 @@ const UserDetails = () => {
         setDeleteUser(false);
         const toastLoadingId = toast.loading("Please wait...");
         setShowActions(false);
-        const url = `https://sa-p-new-broker-back-end.vercel.app/api/userdata/${id}`;
+        const url = `https://sa-p-new-broker-back-end-ashy.vercel.app/api/userdata/${id}`;
         axios
             .delete(url)
             .then((res) => {

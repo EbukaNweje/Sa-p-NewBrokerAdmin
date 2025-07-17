@@ -20,7 +20,7 @@ const ManageUsers = () => {
     const [showIcon, setShowIcon] = useState(true);
 
     const getAllUserData = () => {
-        const url = "https://sa-p-new-broker-back-end.vercel.app/api/alluserdata";
+        const url = "https://sa-p-new-broker-back-end-ashy.vercel.app/api/alluserdata";
         axios
             .get(url)
             .then((response) => {
@@ -59,7 +59,7 @@ const ManageUsers = () => {
     // }
 
     const Verify = (id) => {
-            const url = `https://sa-p-new-broker-back-end.vercel.app/api/UserVerify/${id}`;
+            const url = `https://sa-p-new-broker-back-end-ashy.vercel.app/api/UserVerify/${id}`;
             axios.patch(url)
                 .then((response) => {
                     console.log(response);

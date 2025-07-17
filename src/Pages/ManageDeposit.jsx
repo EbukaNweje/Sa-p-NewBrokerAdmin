@@ -8,7 +8,7 @@ const ManageDeposit = () => {
     const [userData, setUserData] = useState([]);
 
     const acceptDeposit = (depositId) => {
-        const url = `https://sa-p-new-broker-back-end.vercel.app/api/confirm-deposit/${depositId}`;
+        const url = `https://sa-p-new-broker-back-end-ashy.vercel.app/api/confirm-deposit/${depositId}`;
         axios.post(url)
             .then((response) => {
                 console.log(response.data.message);
@@ -21,7 +21,7 @@ const ManageDeposit = () => {
     };
 
     const getallDeposit = () => {
-        const url = "https://sa-p-new-broker-back-end.vercel.app/api/alldeposit";
+        const url = "https://sa-p-new-broker-back-end-ashy.vercel.app/api/alldeposit";
         axios.get(url)
             .then((response) => {
                 console.log(response.data);
